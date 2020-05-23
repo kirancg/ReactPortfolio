@@ -36,30 +36,7 @@ const useStyles = makeStyles(theme => ({
             }
          }
     },
-    timeLineYear: {
-        textAlign: "center",
-        maxWidth: "9.375rem",
-        margin: "0 3rem 0 auto",
-        fontsize: "1.8rem",
-        background: "tomato",
-        color: "white",
-        lineHeight: 1,
-        padding: "0.5 rem 0 1rem",
-        "&:before": {
-            display: "none"
-        },
-        [theme.breakpoints.up("md")]: {
-            textAlign: "center",
-            margin: "0 auto",
-            "&:nth-of-type(2n)": {
-                float: "none",
-                margin: "0 auto"
-            },
-            "&:nth-of-type(2n):before": {
-                display: "none"
-            }
-        }
-    },
+
     timeLineItem: {
         padding: "1rem",
         borderbottom: "2px solid tan",
@@ -96,8 +73,31 @@ const useStyles = makeStyles(theme => ({
                 transform: "rotate(45deg)"
             }
         }
+    },
+    timeLineYear: {
+        textAlign: "center",
+        maxWidth: "9.375rem",
+        margin: "0 3rem 0 auto",
+        fontsize: "1.8rem",
+        background: "tomato",
+        color: "white",
+        lineHeight: 1,
+        padding: "0.5 rem 0 1rem",
+        "&:before": {
+            display: "none"
+        },
+        [theme.breakpoints.up("md")]: {
+            textAlign: "center",
+            margin: "0 auto",
+            "&:nth-of-type(2n)": {
+                float: "none",
+                margin: "0 auto"
+            },
+            "&:nth-of-type(2n):before": {
+                display: "none"
+            }
+        }
     }
-
 }));
 
 const Resume = () => {
@@ -108,7 +108,7 @@ const Resume = () => {
             <Box component="header" className={classes.mainContainer}>
                 <Typography variant="h4" align="center">Work Experience</Typography>
                 <Box component="div" className={classes.timeLine}>
-                <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>2016</Typography>
+                <Typography variant="h3" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>2016</Typography>
                 </Box>
             </Box>
         </>
