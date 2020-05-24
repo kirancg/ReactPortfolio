@@ -3,6 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Avatar, Grid, Box } from "@material-ui/core";
 import Typed from 'react-typed';
 import avatar1 from '../avatar1.jpg';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import Icon from '@material-ui/core/Icon';
 
 //import classes from '*.module.css';
 
@@ -49,6 +51,8 @@ const Header = () => {
                     loop
                 />
             </Typography>
+            
+            
        </Box>
     ) 
 }

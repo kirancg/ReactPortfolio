@@ -97,6 +97,16 @@ const useStyles = makeStyles(theme => ({
                 display: "none"
             }
         }
+    },
+    heading: {
+        color: "tomato",
+        padding: "3rem 0",
+        textTransform: "uppercase"
+    },
+    subHeading: {
+        color: "white",
+        padding: "0",
+        textTransform: "uppercase"
     }
 }));
 
@@ -106,9 +116,55 @@ const Resume = () => {
         <>
             <Navbar />
             <Box component="header" className={classes.mainContainer}>
-                <Typography variant="h4" align="center">Work Experience</Typography>
+                <Typography variant="h4" align="center" className={classes.heading}>Work Experience</Typography>
                 <Box component="div" className={classes.timeLine}>
-                <Typography variant="h3" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>2016</Typography>
+                    <Typography variant="h3" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
+                    2016
+                    </Typography>
+                <Box component="div" className={classes.timeLineItem}>
+                    <Typography variant="h5" align="center" className={classes.subHeading}>
+                            Software Engineer
+                    </Typography>
+                    <Typography variant="body1" align="center" style={{color:"tomato"}}>
+                            Tata Consultancy Services
+                    </Typography>
+                    <Typography variant="subtitle1" align="center" style={{color:"tan"}}>
+                        
+                    </Typography>
+                    </Box>
+                    <Typography variant="h3" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
+                    2018
+                    </Typography>
+                <Box component="div" className={classes.timeLineItem}>
+                    <Typography variant="h5" align="center" className={classes.subHeading}>
+                            Web Developer
+                    </Typography>
+                    <Typography variant="body1" align="center" style={{color:"tomato"}}>
+                            Tata Consultancy Services
+                    </Typography>
+                    <Typography variant="subtitle1" align="center" style={{color:"tan"}}>
+                        
+                    </Typography>
+                    </Box>
+                    {/* Third value */}
+
+                    <Typography variant="h3" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
+                    Sep-2019
+                    </Typography>
+                <Box component="div" className={classes.timeLineItem}>
+                    <Typography variant="h5" align="center" className={classes.subHeading}>
+                            Grad Student <br/>
+                            Full Stack Developer
+                    </Typography>
+                    <Typography variant="body1" align="center" style={{color:"tomato"}}>
+                            Northeastern University
+                    </Typography>
+                    <Typography variant="subtitle1" align="center" style={{color:"tan"}}>
+                        Studying Information Systems at Northeastern University and worked on software development projects as part of the course curriculam
+                    </Typography>
+                </Box>
+
+
                 </Box>
             </Box>
         </>
