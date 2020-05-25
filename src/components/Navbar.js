@@ -112,10 +112,10 @@ const Navbar = () => {
                     </IconButton>
                     {/* What kind of text we want ,heading,subitle */}
                     <Typography variant = "h5" style = {{color:"tan"}}>
-                            Pondi
+                            Portfolio
                     </Typography>
                         <MobileRightMenuSlider
-                        anchor = "right"
+                        anchor = "left"
                             open={state.right}
                             onClose={toggleSlider("right", true)}
                         >

@@ -49,7 +49,8 @@ const InputField = withStyles({
 const Contacts = () => {
      const classes = useStyles()
     return (
-            <Box component="div">
+        <Box component="div">
+            <Navbar />
                 <Grid container justify="center">
                     <Box component="form" className = {classes.form}>
                     <Typography
