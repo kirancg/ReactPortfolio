@@ -71,8 +71,6 @@ const menuItems = [
         listPath:"/contacts"
     }
 ]
-
-
 const Navbar = () => {
 
     const [state, setState] = useState({

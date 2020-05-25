@@ -4,7 +4,12 @@ import { Typography, Avatar, Grid, Box } from "@material-ui/core";
 import Typed from 'react-typed';
 import avatar1 from '../avatar1.jpg';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import TwitterIcon from '@material-ui/icons/Twitter';
 import Icon from '@material-ui/core/Icon';
+import IconButton from '@material-ui/core/IconButton';
+import GetAppIcon from '@material-ui/icons/GetApp';
+
 
 //import classes from '*.module.css';
 
@@ -53,10 +58,21 @@ const Header = () => {
                 
             </Typography>
             <Typography>
-                <LinkedInIcon href = "https://www.linkedin.com/in/kiran-cg/" style={{ color: "tan" }}/>
+                <IconButton  style={{ color: "#0077B5" }} aria-label="Linkedin.com" onClick={() => window.open('https://www.linkedin.com/in/kiran-cg/')}>
+                    <LinkedInIcon  fontSize="large" /> 
+                </IconButton>
+                <IconButton  style={{ color: "black" }} aria-label="Github.com" onClick={() => window.open(' https://github.com/kirancg')}>
+                <GitHubIcon fontSize="large" />
+                </IconButton>
+                <IconButton  style={{ color: "#55acee" }} aria-label="Twitter.com" onClick={() => window.open('https://twitter.com/nimma_cg')}>
+                <TwitterIcon  fontSize="large"/>
+                </IconButton> <br />
+
+                <IconButton  style={{ color: "black" }} aria-label="Resume.com" onClick={() => window.open('https://twitter.com/nimma_cg')}>
+                    <GetAppIcon fontSize="large"></GetAppIcon>
+                    <Typography variant = "h5" style = {{color:"tan"}}> Resume</Typography>
+                </IconButton>
             </Typography>
-            
-            
        </Box>
     ) 
 }

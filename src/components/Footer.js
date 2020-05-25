@@ -1,6 +1,5 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
-import {withStyles} from '@material-ui/core/styles'
 import {
     BottomNavigation, BottomNavigationAction
 } from "@material-ui/core";
@@ -9,12 +8,18 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import { LinkedIn, GitHub, Twitter } from '@material-ui/icons';
 
-const useStyles = withStyles({
+const useStyles = makeStyles({
     root: {
         "& .MuiBottomNavigationAction-root": {
             maxWidth: 250
+        },
+        "& .MuiSvgIcon-root": {
+            fill: "tan",
+            "&:hover": {
+                fill: "tomato",
+                fontSize:"1.8rem"
+            }
         }
-
     }
 })
 
