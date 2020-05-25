@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 //Material-UI aims to provide a strong foundation for building dynamic UIs.
 import { makeStyles } from '@material-ui/core/styles';
 import MobileRightMenuSlider from '@material-ui/core/Drawer'
-
+import Footer from './Footer';
 
 //import AppBar from '@material-ui/core/AppBar';
 //import Toolbar from '@material-ui/core/ToolBar';
@@ -119,8 +119,10 @@ const Navbar = () => {
                         <MobileRightMenuSlider
                         anchor = "right"
                             open={state.right}
-                            onClose = {toggleSlider("right",true)}>
-                          {sideList("right")}  
+                            onClose={toggleSlider("right", true)}
+                        >
+                            {sideList("right")}  
+                          <Footer />  
                     </MobileRightMenuSlider>
                 </Toolbar>  
             </AppBar>
