@@ -46,7 +46,7 @@ const Header = () => {
                 <Avatar className={classes.avatar} src={avatar1} alt="Kiran Kumar Gangadharaiah" />
             </Grid>
             <Typography className={classes.title} variant = "h4">
-                <Typed strings={["Kiran Kumar"]} typeSpeed={40}/>
+                <Typed strings={["Kiran Kumar Gangadharaiah"]} typeSpeed={40}/>
             </Typography>
             <br />
             <Typography className={classes.subtitle} variant = "h5">
@@ -58,17 +58,17 @@ const Header = () => {
                 
             </Typography>
             <Typography>
-                <IconButton  style={{ color: "#0077B5" }} aria-label="Linkedin.com" onClick={() => window.open('https://www.linkedin.com/in/kiran-cg/')}>
+                <IconButton  style={{ color: "tan" }} aria-label="Linkedin.com" onClick={() => window.open('https://www.linkedin.com/in/kiran-cg/')}>
                     <LinkedInIcon  fontSize="large" /> 
                 </IconButton>
-                <IconButton  style={{ color: "black" }} aria-label="Github.com" onClick={() => window.open(' https://github.com/kirancg')}>
+                <IconButton  style={{ color: "tan" }} aria-label="Github.com" onClick={() => window.open(' https://github.com/kirancg')}>
                 <GitHubIcon fontSize="large" />
                 </IconButton>
-                <IconButton  style={{ color: "#55acee" }} aria-label="Twitter.com" onClick={() => window.open('https://twitter.com/nimma_cg')}>
+                <IconButton  style={{ color: "tan" }} aria-label="Twitter.com" onClick={() => window.open('https://twitter.com/nimma_cg')}>
                 <TwitterIcon  fontSize="large"/>
                 </IconButton> <br />
 
-                <IconButton  style={{ color: "black" }} aria-label="Resume.com" onClick={() => window.open('https://twitter.com/nimma_cg')}>
+                <IconButton  style={{ color: "tan" }} aria-label="Resume.com" onClick={() => window.open('https://docdro.id/LzV2psh')}>
                     <GetAppIcon fontSize="large"></GetAppIcon>
                     <Typography variant = "h5" style = {{color:"tan"}}> Resume</Typography>
                 </IconButton>

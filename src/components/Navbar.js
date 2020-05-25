@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import MobileRightMenuSlider from '@material-ui/core/Drawer'
 import Footer from './Footer';
+import MenuIcon from '@material-ui/icons/Menu';
 
 //import AppBar from '@material-ui/core/AppBar';
 //import Toolbar from '@material-ui/core/ToolBar';
@@ -21,19 +22,17 @@ import {
     Box
 } from '@material-ui/core';
 import {
-    ArraowBack,
     AssignmentInd,
     Home,
     Apps,
-    ContactMail,
-    ArrowBack
+    ContactMail
 } from "@material-ui/icons";
 import avatar1 from '../avatar1.jpg'
 
 //CSS style to add style
 const useStyles = makeStyles(theme=> ({
     menuSliderContainer: {
-        width: 250,
+        width: 180,
         background: '#511',
         height: '100%',
     },
@@ -45,6 +44,12 @@ const useStyles = makeStyles(theme=> ({
     },
     listItem: {
         color:"tan"
+    },
+    hamburger: {
+        display: 'block',
+        margin: "0.5 rem auto",
+        width: theme.spacing(13),
+        height: theme.spacing(4)
     }
 }));
 
@@ -57,12 +62,12 @@ const menuItems = [
     },
     {
         listIcon: <AssignmentInd/>,
-        listText: "Resume",
+        listText: "Experience",
         listPath: "/resume"
     },
     {
         listIcon: <Apps/>,
-        listText: "Portfolio",
+        listText: "Projects",
         listPath:"/portfolio"
     },
     {
@@ -88,6 +93,8 @@ const Navbar = () => {
             component="div"
             onClick = {toggleSlider(slider,false)}
         >
+            <br />
+            <MenuIcon className={classes.hamburger} style={{ color: "tomato" }} /> 
             <Avatar className={classes.avatar} src={avatar1} alt="Kiran Kumar"/>
             <Divider /> 
                 <List>
@@ -108,19 +115,19 @@ const Navbar = () => {
             <AppBar position='static' style={{background: "#222"}}>
                 <Toolbar>
                     <IconButton onClick={toggleSlider("right",true)}>
-                    <ArrowBack style={{ color: "tomato" }} />      
+                    <MenuIcon style={{ color: "tomato" }} />      
                     </IconButton>
                     {/* What kind of text we want ,heading,subitle */}
                     <Typography variant = "h5" style = {{color:"tan"}}>
                             Portfolio
                     </Typography>
                         <MobileRightMenuSlider
-                        anchor = "left"
+                            anchor = "left"
                             open={state.right}
                             onClose={toggleSlider("right", true)}
                         >
                             {sideList("right")}  
-                          <Footer />  
+                          {/* <Footer />   */}
                     </MobileRightMenuSlider>
                 </Toolbar>  
             </AppBar>

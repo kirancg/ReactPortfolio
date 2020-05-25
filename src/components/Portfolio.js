@@ -21,6 +21,7 @@ import project4 from '../images/mern-stack.jpg';
 //care n cure
 import project2a from '../images/project2a.png';
 import project5 from '../images/database-design.png';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
     mainContainer: {
@@ -55,12 +56,14 @@ const Portfolio = () => {
                                     Roommate Connector
                                 </Typography>
                                 <Typography  variant="body2" color="textSecondary" component="p">
-                                Lorem20 MERN Stack
+                               It is platform that allows university students to connect with like minded individuals to become roommates .
                                 </Typography>
                             </CardContent>
                             <CardActions>
-                                <Button size ="small" color="primary">
-                                    Share
+                                <Button size ="small" color="primary"  >
+                                    {/* <Link href="https://www.linkedin.com/in/kiran-cg/">Share</Link> */}
+                                    <a href = "https://github.com/kirancg/RoomateFinder" target="_blank">Github</a>
+                                   
                                 </Button>
                                 <Button size ="small" color="primary">
                                     Live Demo
@@ -87,12 +90,12 @@ const Portfolio = () => {
                                     Rock Paper Scissors
                                 </Typography>
                                 <Typography  variant="body2" color="textSecondary" component="p">
-                                Lorem20 HTML
+                                Rock paper scissors game from scratch including the HTML, CSS and JavaScript. No libraries or frameworks, just pure vanilla JavaScript.
                                 </Typography>
                             </CardContent>
                             <CardActions>
                                 <Button size ="small" color="primary">
-                                    Share
+                                <a href = "https://github.com/kirancg/Rock-Paper-Scissors" target="_blank">Github</a>
                                 </Button>
                                 <Button size ="small" color="primary">
                                     Live Demo
@@ -117,12 +120,12 @@ const Portfolio = () => {
                                     Care n Cure
                                 </Typography>
                                 <Typography  variant="body2" color="textSecondary" component="p">
-                                Java Swing Project
+                                This is a healthcare app that integrates all medical services under one umbrella
                                 </Typography>
                             </CardContent>
                             <CardActions>
                                 <Button size ="small" color="primary">
-                                    Share
+                                <a href = "https://github.com/kirancg/AED_JavaProject" target="_blank">Github</a>
                                 </Button>
                                 <Button size ="small" color="primary">
                                     Live Demo
@@ -146,15 +149,15 @@ const Portfolio = () => {
                                     Resort Room
                                 </Typography>
                                 <Typography  variant="body2" color="textSecondary" component="p">
-                                React Beach Resort Project
+                                Beach resort website project. The project uses React router and React context API
                                 </Typography>
                             </CardContent>
                             <CardActions>
                                 <Button size ="small" color="primary">
-                                    Share
+                                <a href = "https://github.com/kirancg/ResortRooms" target="_blank">Github</a>
                                 </Button>
                                 <Button size ="small" color="primary">
-                                    Live Demo
+                                <a href = "https://resortbeachroom.netlify.app/" target="_blank">Live Demo</a>
                                 </Button>
                             </CardActions>
                     </CardActionArea>
@@ -181,7 +184,7 @@ const Portfolio = () => {
                             </CardContent>
                             <CardActions>
                                 <Button size ="small" color="primary">
-                                    Share
+                                <a href = "https://github.com/kirancg/University-Safety-Management-System" target="_blank">Github</a>
                                 </Button>
                                 <Button size ="small" color="primary">
                                     Live Demo

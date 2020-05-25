@@ -61,20 +61,21 @@ const Contacts = () => {
                             textTransform: "uppercase"
                         }}
                     >
-                            Hire or contact me
+                        Hire or contact me
                         </Typography>
-                        <InputField
-                            fullWidth={true}
-                            label="Name"
+                    <InputField  fullWidth={true}
+                            label="Kiran Kumar"
                         variant="outlined"
                         inputProps = {{style:{color: "white"}}}
                         margin="dense"
-                        size="medium"
-                    />
+                        size="medium">
+                        Kiran Kumar CG
+                    </InputField>
+                    
                     <br/>
                     <InputField
                             fullWidth={true}
-                            label="Email"
+                            label="kirancg93@gmail.com"
                         variant="outlined"
                         inputProps = {{style:{color: "white"}}}
                         margin="dense"
@@ -83,16 +84,16 @@ const Contacts = () => {
                      <br/>
                       <InputField
                             fullWidth={true}
-                            label="Company name"
+                            label="+1(857)-284-3726"
                         variant="outlined"
                         inputProps = {{style:{color: "white"}}}
                         margin="dense"
                         size="medium"
                     />
                     <br />
-                    <Button className={classes.button} variant="outlined" fullWidth={true} endIcon={<SendIcon/>}>
+                    {/* <Button className={classes.button} variant="outlined" fullWidth={true} endIcon={<SendIcon/>}>
                         Contact me
-                    </Button>
+                    </Button> */}
                 </Box>
                 </Grid>
             </Box>
