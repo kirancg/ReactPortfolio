@@ -50,6 +50,10 @@ const Header = () => {
                     backSpeed={60}  
                     loop
                 />
+                
+            </Typography>
+            <Typography>
+                <LinkedInIcon href = "https://www.linkedin.com/in/kiran-cg/" style={{ color: "tan" }}/>
             </Typography>
             
             
