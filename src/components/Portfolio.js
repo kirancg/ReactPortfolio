@@ -187,7 +187,7 @@ const Portfolio = () => {
                                 <a href = "https://github.com/kirancg/University-Safety-Management-System" target="_blank">Github</a>
                                 </Button>
                                 <Button size ="small" color="primary">
-                                    Live Demo
+                                    Live Demo 
                                 </Button>
                             </CardActions>
                     </CardActionArea>
