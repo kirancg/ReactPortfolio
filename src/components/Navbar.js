@@ -61,6 +61,11 @@ const menuItems = [
         listPath: "/"
     },
     {
+        listIcon: <Home/>,
+        listText: "About Me",
+        listPath: "/desc"
+    },
+    {
         listIcon: <AssignmentInd/>,
         listText: "Experience",
         listPath: "/resume"
@@ -94,9 +99,9 @@ const Navbar = () => {
             onClick = {toggleSlider(slider,false)}
         >
             <br />
-            <MenuIcon className={classes.hamburger} style={{ color: "tomato" }} /> 
-            <Avatar className={classes.avatar} src={avatar1} alt="Kiran Kumar"/>
-            <Divider /> 
+            <MenuIcon className={classes.hamburger} style={{ color: "tomato" }} />
+{/* <Avatar className={classes.avatar} src={avatar1} alt="Kiran Kumar"/> */}
+            <Divider />
                 <List>
                     {menuItems.map((lsItem, key) => (
                         <ListItem button key={key} component={Link} to={lsItem.listPath}>
@@ -115,7 +120,7 @@ const Navbar = () => {
             <AppBar position='static' style={{background: "#222"}}>
                 <Toolbar>
                     <IconButton onClick={toggleSlider("right",true)}>
-                    <MenuIcon style={{ color: "tomato" }} />      
+                    <MenuIcon style={{ color: "tomato" }} />
                     </IconButton>
                     {/* What kind of text we want ,heading,subitle */}
                     <Typography variant = "h5" style = {{color:"tan"}}>
@@ -126,14 +131,14 @@ const Navbar = () => {
                             open={state.right}
                             onClose={toggleSlider("right", true)}
                         >
-                            {sideList("right")}  
+                            {sideList("right")}
                           {/* <Footer />   */}
                     </MobileRightMenuSlider>
-                </Toolbar>  
+                </Toolbar>
             </AppBar>
         </Box>
         </>
-    )          
+    )
 }
 
 export default Navbar;

@@ -52,14 +52,14 @@ const Header = () => {
             <Typography className={classes.subtitle} variant = "h5">
                 <Typed strings={["Graduate Student", "Software Engineer", "Web Development", "MERN Stack"]}
                     typeSpeed={30}
-                    backSpeed={20}  
+                    backSpeed={20}
                     loop
                 />
-                
+
             </Typography>
             <Typography>
                 <IconButton  style={{ color: "tan" }} aria-label="Linkedin.com" onClick={() => window.open('https://www.linkedin.com/in/kiran-cg/')}>
-                    <LinkedInIcon  fontSize="large" /> 
+                    <LinkedInIcon  fontSize="large" />
                 </IconButton>
                 <IconButton  style={{ color: "tan" }} aria-label="Github.com" onClick={() => window.open(' https://github.com/kirancg')}>
                 <GitHubIcon fontSize="large" />
@@ -68,13 +68,13 @@ const Header = () => {
                 <TwitterIcon  fontSize="large"/>
                 </IconButton> <br />
 
-                <IconButton  style={{ color: "tan" }} aria-label="Resume.com" onClick={() => window.open('https://docdro.id/LzV2psh')}>
+                <IconButton  style={{ color: "tan" }} aria-label="Resume.com" onClick={() => window.open('https://www.docdroid.net/x98xyEK/kirankumar-resume-pdf')}>
                     <GetAppIcon fontSize="large"></GetAppIcon>
                     <Typography variant = "h5" style = {{color:"tan"}}> Resume</Typography>
                 </IconButton>
             </Typography>
        </Box>
-    ) 
+    )
 }
 
 export default Header;

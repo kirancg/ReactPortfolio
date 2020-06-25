@@ -6,8 +6,13 @@ import {
     Box
 } from '@material-ui/core';
 import Navbar from './Navbar';
+import Particles from 'react-particles-js';
 
 const useStyles = makeStyles(theme => ({
+    particlesCanva: {
+        position: "absolute",
+        opacity:"0.3"
+    },
     mainContainer: {
         background: "#233"
     },
@@ -76,7 +81,7 @@ const useStyles = makeStyles(theme => ({
     },
     timeLineYear: {
         textAlign: "center",
-        maxWidth: "9.375rem",
+        maxWidth: "8.375rem",
         margin: "0 3rem 0 auto",
         fontsize: "1.8rem",
         background: "tomato",
@@ -115,11 +120,53 @@ const Resume = () => {
     return (
         <>
             <Navbar />
+            <Particles
+                    canvasClassName={classes.particlesCanva}
+                    paramas={{
+                        particles: {
+                            number: {
+                                value: 45,
+                                density: {
+                                    enable: true,
+                                    value_area: 900
+                                }
+                            },
+                            shape: {
+                                type: "star",
+                                stroke: {
+                                    width: 1,
+                                    color: 'tomato'
+                                }
+                            },
+                            size: {
+                                value: 8,
+                                random: true,
+                                // animation: false,
+                                anim: {
+                                    enable: true,
+                                    speed: 8,
+                                    size_min: 0.1,
+                                    sync: true
+                                }
+                            },
+                            opacity: {
+                                values: 1,
+                                random: true,
+                                anim: {
+                                    enable: true,
+                                    speed: 1,
+                                    opacity_min: 0.1,
+                                    sync: true
+                                }
+                            }
+                        }
+                    }}
+                />
             <Box component="header" className={classes.mainContainer}>
                 <Typography variant="h4" align="center" className={classes.heading}>Work Experience</Typography>
                 <Box component="div" className={classes.timeLine}>
-                    <Typography variant="h3" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
-                    2016
+                    <Typography variant="h4" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
+                   Mar 2016
                     </Typography>
                 <Box component="div" className={classes.timeLineItem}>
                     <Typography variant="h5" align="center" className={classes.subHeading}>
@@ -129,11 +176,13 @@ const Resume = () => {
                             Tata Consultancy Services
                     </Typography>
                     <Typography variant="subtitle1" align="center" style={{color:"tan"}}>
-                        
+                            Development of web application to manage business process related to payments of user services. Developed REST APIs for this application using Spring Boot.
+                            Refactored the existing code, added new features according to the requirements of the customer
+
                     </Typography>
                     </Box>
-                    <Typography variant="h3" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
-                    2018
+                    <Typography variant="h4" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
+                    July 2018
                     </Typography>
                 <Box component="div" className={classes.timeLineItem}>
                     <Typography variant="h5" align="center" className={classes.subHeading}>
@@ -143,12 +192,12 @@ const Resume = () => {
                             Tata Consultancy Services
                     </Typography>
                     <Typography variant="subtitle1" align="center" style={{color:"tan"}}>
-                        
+                    Designed page layout using HTML5, CSS3 with JavaScript for internal insurance portal. Tackled various issues related to browser compatibility to accommodate advanced technologies.
                     </Typography>
                     </Box>
                     {/* Third value */}
 
-                    <Typography variant="h3" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
+                    <Typography variant="h4" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
                     Sep-2019
                     </Typography>
                 <Box component="div" className={classes.timeLineItem}>
@@ -160,7 +209,7 @@ const Resume = () => {
                             Northeastern University
                     </Typography>
                     <Typography variant="subtitle1" align="center" style={{color:"tan"}}>
-                        Studying Information Systems at Northeastern University and worked on software development projects as part of the course curriculam
+                        Studying Information Systems at Northeastern University and worked on software development projects as part of the course curriculam(Java and JavaScript)
                     </Typography>
                 </Box>
 
